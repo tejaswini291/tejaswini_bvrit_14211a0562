@@ -39,7 +39,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public void setStudents(Student[] students) {
 			try
 			{
-				if(students.length==0)
+				if(students==null)
 					throw new IllegalArgumentException("exception");
 					
 			}
