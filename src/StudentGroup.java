@@ -40,10 +40,12 @@ public class StudentGroup implements StudentArrayOperation {
 			try
 			{
 				if(students.length==0)
-					throw new IllegalArgumentException();
+					throw new IllegalArgumentException("exception");
 					
 			}
-			catch(IllegalArgumentException e) {}
+			catch(IllegalArgumentException e) {
+				System.out.println(e.getMessage());
+			}
 		// Add your implementation here
 	}
 
@@ -61,12 +63,12 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void setStudent(Student student, int index) {
-		try
+		/*try
 		{
 			if(index<0 || index>=students.length)
 				throw new IllegalArgumentException();
 		}
-		catch(IllegalArgumentException e) {}
+		catch(IllegalArgumentException e) {}*/
 		// Add your implementation here
 	}
 
