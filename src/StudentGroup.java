@@ -25,12 +25,19 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student[] getStudents() {
+		try
+		{
+			if(students.length!=0)
+				return students;
+		}
+		catch(IllegalArgumentException e) {}
 		// Add your implementation here
 		return null;
 	}
 
 	@Override
 	public void setStudents(Student[] students) {
+			
 		// Add your implementation here
 	}
 
@@ -62,6 +69,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void remove(int index) {
+		
 		// Add your implementation here
 	}
 
