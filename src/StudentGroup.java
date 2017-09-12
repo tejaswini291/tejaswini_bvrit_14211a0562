@@ -37,7 +37,13 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void setStudents(Student[] students) {
-			
+			try
+			{
+				if(students.length==0)
+					throw new IllegalArgumentException();
+					
+			}
+			catch(IllegalArgumentException e) {}
 		// Add your implementation here
 	}
 
